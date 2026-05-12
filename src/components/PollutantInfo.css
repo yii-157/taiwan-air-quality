@@ -1,0 +1,390 @@
+.pollutant-info-container {
+  background: #f5f7fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+  max-height: 600px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Microsoft YaHei', 'SimHei', 'PingFang SC', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.pollutant-info-page {
+  background: #f5f7fa;
+  min-height: 100%;
+  padding: 30px 20px;
+  font-family: 'Microsoft YaHei', 'SimHei', 'PingFang SC', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.pollutant-page-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.pollutant-page-header h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.station-name {
+  margin: 0;
+  color: #666;
+  font-size: 18px;
+}
+
+.pollutant-info-placeholder {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+  font-size: 16px;
+}
+
+.pollutant-info-header {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.pollutant-info-header h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pollutant-info-station {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.pollutant-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pollutant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pollutant-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pollutant-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.pollutant-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  user-select: none;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  transition: background 0.2s ease;
+}
+
+.pollutant-card-header:hover {
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+}
+
+.pollutant-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.pollutant-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 18px;
+}
+
+.pollutant-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.pollutant-value {
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.pollutant-card-level {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pollutant-level-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.expand-icon {
+  color: #999;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.pollutant-card-content {
+  padding: 30px;
+  background: white;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.pollutant-card-details {
+  padding: 20px;
+  background: white;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-section h4,
+.detail-section h5 {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-section p,
+.detail-section p {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.status-box {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.status-box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.current-status {
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.current-status p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.advice-box {
+  background: #f0f8ff;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.reference-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reference-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #667eea;
+}
+
+.level-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.level-range {
+  color: #666;
+  font-size: 13px;
+}
+
+.levels-reference {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.level-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.level-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.level-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.level-text strong {
+  font-size: 12px;
+  color: #333;
+}
+
+.level-text span {
+  font-size: 11px;
+  color: #999;
+}
+
+.pollutant-info-footer {
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #999;
+  font-size: 12px;
+}
+
+/* 自訂滾動條 */
+.pollutant-info-container::-webkit-scrollbar,
+.pollutant-info-page::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pollutant-info-container::-webkit-scrollbar-track,
+.pollutant-info-page::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.pollutant-info-container::-webkit-scrollbar-thumb,
+.pollutant-info-page::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.pollutant-info-container::-webkit-scrollbar-thumb:hover,
+.pollutant-info-page::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* 響應式設計 */
+@media (max-width: 1200px) {
+  .pollutant-cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pollutant-info-container {
+    max-height: 400px;
+    padding: 15px;
+  }
+
+  .pollutant-info-page {
+    padding: 20px 15px;
+  }
+
+  .pollutant-page-header h2 {
+    font-size: 24px;
+  }
+
+  .station-name {
+    font-size: 16px;
+  }
+
+  .pollutant-card-header {
+    padding: 15px;
+  }
+
+  .pollutant-card-content,
+  .pollutant-card-details {
+    padding: 15px;
+  }
+
+  .pollutant-label,
+  .pollutant-name {
+    font-size: 14px;
+  }
+
+  .pollutant-value {
+    font-size: 14px;
+  }
+
+  .info-section h4,
+  .detail-section h5 {
+    font-size: 14px;
+  }
+
+  .info-section p,
+  .detail-section p {
+    font-size: 13px;
+  }
+}
