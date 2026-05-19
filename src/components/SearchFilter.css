@@ -1,17 +1,18 @@
 .search-filter {
-  background: white;
+  background: #f5f3f0;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(155, 139, 126, 0.1);
   margin-bottom: 20px;
   font-family: 'Microsoft YaHei', 'SimHei', 'PingFang SC', Arial, sans-serif;
   font-weight: 500;
+  border: 1px solid #e8e6e1;
 }
 
 .search-filter h2 {
   margin: 0 0 15px 0;
   font-size: 18px;
-  color: #333;
+  color: #6b6b6b;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -34,17 +35,17 @@
 .filter-group select {
   width: 100%;
   padding: 12px 12px;
-  border: 2px solid #667eea;
+  border: 2px solid #9b8b7e;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 600;
-  color: #333;
-  background-color: #f8f9ff;
+  color: #6b6b6b;
+  background-color: #f0ebe5;
   cursor: pointer;
   transition: all 0.3s;
   font-family: inherit;
   appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239b8b7e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 20px;
@@ -52,16 +53,16 @@
 }
 
 .filter-group select:hover {
-  border-color: #667eea;
-  background-color: #f0f2ff;
-  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+  border-color: #9b8b7e;
+  background-color: #ebe6e0;
+  box-shadow: 0 2px 8px rgba(155, 139, 126, 0.15);
 }
 
 .filter-group select:focus {
   outline: none;
-  border-color: #667eea;
-  background-color: #f0f2ff;
-  box-shadow: 0 0 12px rgba(102, 126, 234, 0.4);
+  border-color: #9b8b7e;
+  background-color: #ebe6e0;
+  box-shadow: 0 0 12px rgba(155, 139, 126, 0.3);
 }
 
 .filter-group select:disabled {
@@ -80,8 +81,8 @@
 
 .search-btn {
   padding: 12px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, #9b8b7e 0%, #8b8680 100%);
+  color: #f5f3f0;
   border: none;
   border-radius: 6px;
   font-size: 14px;
@@ -92,7 +93,7 @@
 
 .search-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(155, 139, 126, 0.3);
 }
 
 .search-btn:active {
@@ -101,9 +102,9 @@
 
 .reset-btn {
   padding: 12px;
-  background: #f0f0f0;
-  color: #666;
-  border: 2px solid #e0e0e0;
+  background: #e8e6e1;
+  color: #6b6b6b;
+  border: 2px solid #d8d6d1;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 600;
@@ -141,8 +142,8 @@
 }
 
 .stat-value {
-  background: #f0f4ff;
-  color: #667eea;
+  background: #f0ebe5;
+  color: #9b8b7e;
   padding: 3px 8px;
   border-radius: 4px;
   font-weight: 600;
