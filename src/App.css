@@ -14,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #e8e6e1;
+  background: linear-gradient(135deg, #4A3F5C 0%, #5A6B7A 50%, #6B7B8A 100%);
   font-weight: 500;
   letter-spacing: 0.3px;
   color: #5a5a5a;
@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: #e8e6e1;
+  background: linear-gradient(135deg, #4A3F5C 0%, #5A6B7A 50%, #6B7B8A 100%);
 }
 
 .header {
@@ -57,12 +57,12 @@ body {
 
 .map-section {
   flex: 2;
-  background: #f5f3f0;
+  background: rgba(245, 243, 240, 0.95);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(155, 139, 126, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   min-width: 0;
-  border: 1px solid #e8e6e1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .control-section {
