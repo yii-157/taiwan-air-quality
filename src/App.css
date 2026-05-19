@@ -14,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #4A3F5C 0%, #5A6B7A 50%, #6B7B8A 100%);
+  background: #D4C5E2;
   font-weight: 500;
   letter-spacing: 0.3px;
   color: #5a5a5a;
@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: linear-gradient(135deg, #4A3F5C 0%, #5A6B7A 50%, #6B7B8A 100%);
+  background: #D4C5E2;
 }
 
 .header {
